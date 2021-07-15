@@ -8,7 +8,6 @@
     <script src="https://kit.fontawesome.com/dba1ed6f49.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
     <style>
         body{
     margin-top: 0;
@@ -21,8 +20,6 @@
     width: 700px;
     padding-left: 100px;
     padding-top: 100px;
-    
-   
 }
 .heading{
     color:aliceblue;   
@@ -38,13 +35,13 @@
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 20px;
-    padding-right: 20px;
-    
+    padding-right: 20px;   
 }
+/*--watch live icon--*/
 i{
     padding-left: 9px;
 }
-.Top{
+.conmebol{
     display: flex;
 }
 img{
@@ -53,10 +50,9 @@ img{
     padding-right: 40px;
 }
 .Copa:hover img{
-    transform: rotate(40deg) scale(.85);
-    
+    transform: rotate(40deg) scale(.85);  
 }
-.middle{
+.player-section{
     margin-top: 50px;
     margin-bottom: 60px;
     display: grid;
@@ -85,30 +81,30 @@ h2{
 }
 .player-blog{
     color: rgb(110, 109, 109);
-    font-size: 1em;
+    font-size: 15px;
     font-family: 'Poppins',sans-serif;
 }
+/*---styling you will never walk alone area---*/
 article{
     margin-top: 10px;
     height: 2em;
+    color: cornsilk;
+    text-align:center ;
+    font-size: 30px;
+    font-family: 'Poppins',sans-serif;
     background-color:rgb(59, 3, 149);
     border:1px solid rgb(255, 255, 255);
     transition: border 1sec;
-    color: cornsilk;
-    font-family: 'Poppins',sans-serif;
-    font-size: 3em;
     padding-top: 30px;
-    text-align:center ;
 
 }
-/* styling the area before bottom section*/
 .article{
     width: 1400px;
 }
 article:hover{
     border: 3px solid rgb(245, 27, 92);
 }
-.bottom{
+.video-section{
     margin-top: 10px;
     margin-bottom: 15px;
     height: 700px;
@@ -124,22 +120,23 @@ iframe{
     width: 450px;
     height: 300px;
 }
+/*---Copa america latest news--*/
 h3{
     padding-right: 120px;
-    padding-top: 20px;
+    padding-top: 10px;
     font-size: 2em;
     font-family: 'Poppins',sans-serif;
 }
 #watch{
     color: white;
-    background-image: linear-gradient(blue,rgb(32, 104, 240));
-    padding: 10px 10px 10px 10px;
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(blue,rgb(32, 104, 240));
+    padding: 10px 10px 10px 10px;
+    
 }
 footer{
     width: 1400px;
-
 }
 footer img{
     height: 70px;
@@ -169,7 +166,7 @@ footer p{
 /*-------media queries for mobile devices----*/
 @media only screen and (max-width:480px){
     
-    .Top{
+    .conmebol{
         flex-direction: column;
         width: 100%;
     }
@@ -177,7 +174,7 @@ footer p{
         width: 350px;
         height: 290px;
     }
-   .middle{
+   .player-section{
        grid-template-columns: repeat(1,1fr);
        padding-left: 40px;
        padding-right: 80px;
@@ -187,32 +184,29 @@ footer p{
       height: 300px;
    }
    .player-column{
-       height: 430px;
+       height: 450px;
    }
    article{
        text-align: center;
-       font-size: 1em;
+       font-size: 23px;
        height: 2.5em;
        width: 100%;
    }
-   .bottom{
+   .video-section{
     grid-template-columns: repeat(1,1fr);
    }
    footer{
        width: 100%;
-       padding-left: 0px;
-   }
-  
-   
+   }  
 }
+/*--media query ends here--*/
     </style>
         
 </head>
 <body>
-    <section class="Top">
+    <section class="conmebol">
         <div class="Copa">
-            <h1 class="heading">Conmebol<br>Copa America<br>2021</h1>
-        
+        <h1 class="heading">Conmebol<br>Copa America<br>2021</h1>
         <a class="button_link" title="click" target="_blank" href="https://www.google.com">watch Live <i class="fas fa-arrow-right"></i></a>
         </div>
         <div class="Copa">
@@ -220,51 +214,51 @@ footer p{
         </div>
     </section>
 
-    <section class="middle">
+    <section class="player-section">
         <div class="player-column">
             <img class="photo" src="player-1.png">
             <h2>Neymar Jr</h2>
-            <p class="player-blog">One of the best players of Brasil and good competitor of Messi. He is pretty much young</p>
+            <p class="player-blog">One of the best players of Brasil and good competitor of Messi.</p>
         </div>
         <div class="player-column">
             <img class="photo" src="player-2.png">
             <h2>Lionel Messi</h2>
-            <p class="player-blog">One of the best players of Brasil and good competitor of Messi. He is pretty much young</p>
+            <p class="player-blog">A 34 years old player who just won the 2021 copa america!!</p>
         </div>
         <div class="player-column">
             <img class="photo" src="player-3.png">
             <h2>Cristiano Ronaldo</h2>
-            <p class="player-blog">One of the best players of Brasil and good competitor of Messi. He is pretty much young</p>
+            <p class="player-blog">He played for portugal in euro cup and this was his last euro</p>
         </div>
         <div class="player-column">
             <img class="photo" src="player-5.png">
             <h2>Mesut Ozil </h2>
-            <p class="player-blog">One of the best players of Brasil and good competitor of Messi. He is pretty much young</p>
+            <p class="player-blog">One of the most practicing player with good manner and devotion</p>
         </div>
         <div class="player-column">
             <img class="photo" src="player-9.png">
             <h2>Mohamed Salah</h2>
-            <p class="player-blog">One of the best players of Brasil and good competitor of Messi. He is pretty much young</p>
+            <p class="player-blog">He is a popular player who has a beautiful little girl</p>
         </div>
         <div class="player-column">
             <img class="photo" src="player-7.png">
             <h2>Di Maria</h2>
-            <p class="player-blog">One of the best players of Brasil and good competitor of Messi. He is pretty much young</p>
+            <p class="player-blog">In 2021 copa america he is the only person who goaled</p>
         </div>
         <div class="player-column">
             <img class="photo" src="player-8.png">
             <h2>Kylian Mbappér</h2>
-            <p class="player-blog">One of the best players of Brasil and good competitor of Messi. He is pretty much young</p>
+            <p class="player-blog">Young and strong player with beautiful skills</p>
         </div>
         <div class="player-column">
             <img class="photo" src="player-4.png">
             <h2>Paulo Dybala</h2>
-            <p class="player-blog">One of the best players of Brasil and good competitor of Messi. He is pretty much young</p>
+            <p class="player-blog">He is an Argentine professional footballer who plays as a forward</p>
         </div>
         <div class="player-column">
             <img class="photo" src="player-12.png">
             <h2>Philippe Coutinho</h2>
-            <p class="player-blog">One of the best players of Brasil and good competitor of Messi. He is pretty much young</p>
+            <p class="player-blog">He is a Brazilian professional footballer who plays as an attacking midfielder </p>
         </div>
     </section>
     
@@ -273,9 +267,7 @@ footer p{
         <i class="fas fa-trophy"></i>  YOU'LL NEVER WALK ALONE <i class="fas fa-trophy"></i>
     </article>
     <hr>
-    
-
-    <section class="bottom">
+    <section class="video-section">
     
         <div class="video">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/sDFr2Yzd-8s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -299,13 +291,11 @@ footer p{
                 <div><a target="_blank" href="https://www.baseball.com"><i class="fas fa-baseball-ball"></i></a></div>
                 <div><a target="_blank" href="https://www.tweeter.com"><i class="fab fa-twitter-square"></i></a></div>
                 <div><a target="_blank" href="https://www.youtube.com"><i class="fab fa-youtube-square"></i></a></div>
-        
             </div>
         </div>
         <div class="footer-things">
             <p>Copyright <i class="far fa-copyright"></i>2022 Football</p>
-        </div>
-        
+        </div>  
     </footer>
     
 </body>
